@@ -14,6 +14,7 @@
 		9782DAB41C1ED44500F2FC46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9782DAB31C1ED44500F2FC46 /* Images.xcassets */; };
 		9782DAB71C1ED44500F2FC46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9782DAB51C1ED44500F2FC46 /* LaunchScreen.xib */; };
 		9782DAC31C1ED44500F2FC46 /* mySadPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DAC21C1ED44500F2FC46 /* mySadPaintTests.m */; };
+		9782DACE1C1ED57600F2FC46 /* SimpleDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DACD1C1ED57600F2FC46 /* SimpleDrawer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9782DABC1C1ED44500F2FC46 /* mySadPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mySadPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9782DAC11C1ED44500F2FC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9782DAC21C1ED44500F2FC46 /* mySadPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mySadPaintTests.m; sourceTree = "<group>"; };
+		9782DACC1C1ED57200F2FC46 /* SimpleDrawer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleDrawer.h; sourceTree = "<group>"; };
+		9782DACD1C1ED57600F2FC46 /* SimpleDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDrawer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		9782DAA51C1ED44500F2FC46 /* mySadPaint */ = {
 			isa = PBXGroup;
 			children = (
+				9782DACC1C1ED57200F2FC46 /* SimpleDrawer.h */,
+				9782DACD1C1ED57600F2FC46 /* SimpleDrawer.m */,
 				9782DAAA1C1ED44500F2FC46 /* AppDelegate.h */,
 				9782DAAB1C1ED44500F2FC46 /* AppDelegate.m */,
 				9782DAAD1C1ED44500F2FC46 /* ViewController.h */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9782DACE1C1ED57600F2FC46 /* SimpleDrawer.m in Sources */,
 				9782DAAF1C1ED44500F2FC46 /* ViewController.m in Sources */,
 				9782DAAC1C1ED44500F2FC46 /* AppDelegate.m in Sources */,
 				9782DAA91C1ED44500F2FC46 /* main.m in Sources */,
