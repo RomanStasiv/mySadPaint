@@ -10,4 +10,11 @@
 
 @interface SimpleDrawer : UIView
 
+@property (nonatomic, assign) CGContextRef curentContext;
+-(void)addOperation:(NSString*) operation
+     fromStartPoint:(CGPoint) startPoint
+         toEndPoint:(CGPoint) endPoint;
+-(void)cancelLastOperation;
+
+
 @end

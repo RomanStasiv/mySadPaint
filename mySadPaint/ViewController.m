@@ -11,19 +11,18 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong) UIView *figure;
-
+@property (weak, nonatomic) IBOutlet SimpleDrawer *figure;
+@property (nonatomic, assign) CGPoint startPoint;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     
-    SimpleDrawer *rect = [[SimpleDrawer alloc] initWithFrame:CGRectMake(100, 100, 150, 150)];
-    [self.view addSubview:rect];
-    
+    [_figure addOperation:@"rect" fromStartPoint:CGPointMake(0, 0) toEndPoint:CGPointMake(100, 100)];
 }
 
 
@@ -33,33 +32,35 @@
 {
     [super touchesBegan:touches withEvent:event];
     
-    CGPoint point = [touches.anyObject locationInView:self.view];
+    _startPoint.x = [touches.anyObject locationInView:self.view].x;
+    _startPoint.y = [touches.anyObject locationInView:self.view].y;
     
-    for (UIView *view in self.view.subviews)
-    {
-        if (CGRectContainsPoint(view.frame, point))
-        {
-            self.figure = view;
-            break;
-        }
-    }
+    NSLog(@"startsad%f %f", _startPoint.x, _startPoint.y);
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesMoved:touches withEvent:event];
     
-    CGPoint point = [touches.anyObject locationInView:self.view];
+    CGPoint endPoint = [touches.anyObject locationInView:self.view];
     
-    self.figure.center = point;
-    
+    [self.figure cancelLastOperation];
+    [(SimpleDrawer *)self.figure addOperation:@"eclipse"
+                               fromStartPoint:self.startPoint
+                                   toEndPoint:endPoint];
+    NSLog(@"start%f %f", _startPoint.x, _startPoint.y);
+    NSLog(@"endpoint%f %f", _startPoint.x, _startPoint.y);
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesEnded:touches withEvent:event];
     
-    self.figure = nil;
+    CGPoint endPoint = [touches.anyObject locationInView:self.view];
+    [(SimpleDrawer *)self.figure addOperation:@"eclipse"
+                               fromStartPoint:self.startPoint
+                                   toEndPoint:endPoint];
+    NSLog(@"%f %f", _startPoint.x, _startPoint.y);
 }
 
 
