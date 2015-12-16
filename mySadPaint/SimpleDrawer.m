@@ -44,17 +44,18 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    self.curentContext = context;
-        
-    CGContextSetLineWidth(context, 2.0);
-    CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+    
+    
+    CGContextSetLineWidth(context, 2.0); CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
     
     for (NSDictionary *temp in self.drawingsToProcede)
     {
+        
         CGPoint startPoint = [[temp valueForKey:@"startPoint"] CGPointValue];
         CGPoint endPoint = [[temp valueForKey:@"endPoint"] CGPointValue];
-        CGContextBeginPath(context);
+        CGContextSetStrokeColorWithColor(context, ((UIColor*)[temp objectForKey:@"color"]).CGColor);
         
+        CGContextBeginPath(context);
         if ([[temp valueForKey:@"operation"] isEqualToString:@"line"])
         {
             CGContextMoveToPoint(context, startPoint.x, startPoint.y);
@@ -62,7 +63,7 @@
         }
         if ([[temp valueForKey:@"operation"] isEqualToString:@"rect"])
         {
-            CGContextAddRect(context, CGRectMake(startPoint.x, endPoint.y, (endPoint.x - startPoint.x), (endPoint.y - startPoint.y)));
+            CGContextAddRect(context, CGRectMake(startPoint.x, startPoint.y, (endPoint.x - startPoint.x), (endPoint.y - startPoint.y)));
             CGContextStrokePath(context);
         }
         if ([[temp valueForKey:@"operation"] isEqualToString:@"eclipse"])
@@ -77,7 +78,6 @@
             CGContextAddLineToPoint(context, startPoint.x, endPoint.y);
             CGContextAddLineToPoint(context, (startPoint.x + endPoint.x)/2, startPoint.y);
         }
-        
         CGContextStrokePath(context);
     }
 }
@@ -85,6 +85,7 @@
 -(void)addOperation:(NSString*) operation
      fromStartPoint:(CGPoint) startPoint
          toEndPoint:(CGPoint) endPoint
+          withColor:(UIColor*) color
 {
     if (self.drawingsToProcede == nil)
         self.drawingsToProcede = [[NSMutableArray alloc] init];
@@ -92,15 +93,36 @@
     [temp setObject:operation forKey:@"operation"];
     [temp setObject:[NSValue valueWithCGPoint:startPoint] forKey:@"startPoint"];
     [temp setObject:[NSValue valueWithCGPoint:endPoint] forKey:@"endPoint"];
+    [temp setObject:color forKey:@"color"];
     
     [self.drawingsToProcede addObject:temp];
     
     [self setNeedsDisplay];
 }
 
+-(void)changeColor:(UIColor*) color
+{
+    if (self.drawingsToProcede == nil)
+        self.drawingsToProcede = [[NSMutableArray alloc] init];
+    NSMutableDictionary *temp = [[NSMutableDictionary alloc] init];
+    [temp setObject:@"colorChange" forKey:@"operation"];
+    [temp setObject:color forKey:@"color"];
+    
+    [self.drawingsToProcede addObject:temp];
+    
+    [self setNeedsDisplay];
+}
+
+-(void)setRect:(CGRect) rect
+         withN:(NSInteger) N
+{
+    double circleRadius = rect.size.height/2;
+}
+
 -(void)cancelLastOperation
 {
     [self.canceleddrawings addObject:[self.drawingsToProcede lastObject]];
+    NSLog(@"canceled:%@", [[self.drawingsToProcede lastObject] valueForKey:@"operation"]);
     [self.drawingsToProcede removeLastObject];
     
     

@@ -13,7 +13,8 @@
 @property (nonatomic, assign) CGContextRef curentContext;
 -(void)addOperation:(NSString*) operation
      fromStartPoint:(CGPoint) startPoint
-         toEndPoint:(CGPoint) endPoint;
+         toEndPoint:(CGPoint) endPoint
+          withColor:(UIColor*) color;
 -(void)cancelLastOperation;
 
 
