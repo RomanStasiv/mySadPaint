@@ -25,6 +25,7 @@
     
     self.selectedOperation = @"line";
     self.selectedColor = [UIColor redColor];
+    [self.figure addOperation:@"sadness" fromStartPoint:CGPointMake(0, 0) toEndPoint:CGPointMake(1000, 1000) withColor:[UIColor redColor]];
 
 }
 - (IBAction)operationChanged:(UISegmentedControl *)sender
@@ -37,7 +38,7 @@
             break;
         case 2: self.selectedOperation = @"triangle";
             break;
-        case 3: self.selectedOperation = @"eclipse";
+        case 3: self.selectedOperation = @"ellipse";
             break;
     }
 }
