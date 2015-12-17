@@ -143,7 +143,7 @@
 -(void)setRect:(CGRect) rect
          withN:(NSInteger) N
 {
-
+    double asdas;
 }
 
 -(void)cancelLastOperation
