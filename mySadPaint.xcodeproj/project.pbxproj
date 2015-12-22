@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9753D9021C2429B5008F6284 /* BoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9753D9011C2429B5008F6284 /* BoardViewController.m */; };
+		9753D9061C2433A5008F6284 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9753D9051C2433A5008F6284 /* CanvasViewController.m */; };
+		9753D90B1C243711008F6284 /* PanelColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9753D90A1C243711008F6284 /* PanelColorsViewController.m */; };
+		9753D90F1C243770008F6284 /* PanelFiguresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9753D90E1C243770008F6284 /* PanelFiguresViewController.m */; };
 		9782DAA91C1ED44500F2FC46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DAA81C1ED44500F2FC46 /* main.m */; };
 		9782DAAC1C1ED44500F2FC46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DAAB1C1ED44500F2FC46 /* AppDelegate.m */; };
 		9782DAAF1C1ED44500F2FC46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DAAE1C1ED44500F2FC46 /* ViewController.m */; };
@@ -28,6 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9753D9011C2429B5008F6284 /* BoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardViewController.m; sourceTree = "<group>"; };
+		9753D9031C2429C0008F6284 /* BoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardViewController.h; sourceTree = "<group>"; };
+		9753D9041C2433A5008F6284 /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		9753D9051C2433A5008F6284 /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		9753D90A1C243711008F6284 /* PanelColorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelColorsViewController.m; sourceTree = "<group>"; };
+		9753D90C1C243716008F6284 /* PanelColorsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanelColorsViewController.h; sourceTree = "<group>"; };
+		9753D90D1C243770008F6284 /* PanelFiguresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelFiguresViewController.h; path = Base.lproj/PanelFiguresViewController.h; sourceTree = "<group>"; };
+		9753D90E1C243770008F6284 /* PanelFiguresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanelFiguresViewController.m; path = Base.lproj/PanelFiguresViewController.m; sourceTree = "<group>"; };
 		9782DAA31C1ED44500F2FC46 /* mySadPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySadPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9782DAA71C1ED44500F2FC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9782DAA81C1ED44500F2FC46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +55,7 @@
 		9782DAC21C1ED44500F2FC46 /* mySadPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mySadPaintTests.m; sourceTree = "<group>"; };
 		9782DACC1C1ED57200F2FC46 /* SimpleDrawer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleDrawer.h; sourceTree = "<group>"; };
 		9782DACD1C1ED57600F2FC46 /* SimpleDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDrawer.m; sourceTree = "<group>"; };
+		978BA6181C2824B900E1E37D /* PanelsProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanelsProtocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +101,17 @@
 				9782DACD1C1ED57600F2FC46 /* SimpleDrawer.m */,
 				9782DAAA1C1ED44500F2FC46 /* AppDelegate.h */,
 				9782DAAB1C1ED44500F2FC46 /* AppDelegate.m */,
+				978BA6181C2824B900E1E37D /* PanelsProtocols.h */,
+				9753D90C1C243716008F6284 /* PanelColorsViewController.h */,
+				9753D90A1C243711008F6284 /* PanelColorsViewController.m */,
+				9753D90D1C243770008F6284 /* PanelFiguresViewController.h */,
+				9753D90E1C243770008F6284 /* PanelFiguresViewController.m */,
 				9782DAAD1C1ED44500F2FC46 /* ViewController.h */,
 				9782DAAE1C1ED44500F2FC46 /* ViewController.m */,
+				9753D9031C2429C0008F6284 /* BoardViewController.h */,
+				9753D9011C2429B5008F6284 /* BoardViewController.m */,
+				9753D9041C2433A5008F6284 /* CanvasViewController.h */,
+				9753D9051C2433A5008F6284 /* CanvasViewController.m */,
 				9782DAB01C1ED44500F2FC46 /* Main.storyboard */,
 				9782DAB31C1ED44500F2FC46 /* Images.xcassets */,
 				9782DAB51C1ED44500F2FC46 /* LaunchScreen.xib */,
@@ -225,9 +247,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9782DACE1C1ED57600F2FC46 /* SimpleDrawer.m in Sources */,
+				9753D9021C2429B5008F6284 /* BoardViewController.m in Sources */,
+				9753D9061C2433A5008F6284 /* CanvasViewController.m in Sources */,
 				9782DAAF1C1ED44500F2FC46 /* ViewController.m in Sources */,
+				9753D90F1C243770008F6284 /* PanelFiguresViewController.m in Sources */,
 				9782DAAC1C1ED44500F2FC46 /* AppDelegate.m in Sources */,
 				9782DAA91C1ED44500F2FC46 /* main.m in Sources */,
+				9753D90B1C243711008F6284 /* PanelColorsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +450,7 @@
 				9782DAC81C1ED44500F2FC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9782DAC91C1ED44500F2FC46 /* Build configuration list for PBXNativeTarget "mySadPaintTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +459,7 @@
 				9782DACB1C1ED44500F2FC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

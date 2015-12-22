@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>172EBF5B-AA08-418F-ACF2-7B02EBE8784B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>mySadPaint</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7C6FE90399BA128DE217D8DCA4B9B919963E33DD</key>
 		<string>https://github.com/RomanStasiv/mySadPaint.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>mySadPaint.xcodeproj</string>
+	<string>mySadPaint.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7C6FE90399BA128DE217D8DCA4B9B919963E33DD</key>

@@ -15,6 +15,7 @@
      fromStartPoint:(CGPoint) startPoint
          toEndPoint:(CGPoint) endPoint
           withColor:(UIColor*) color;
+-(void)addPointToPencilTray:(CGPoint)point;
 -(void)cancelLastOperation;
 
 
