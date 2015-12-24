@@ -11,6 +11,8 @@
 		9753D9061C2433A5008F6284 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9753D9051C2433A5008F6284 /* CanvasViewController.m */; };
 		9753D90B1C243711008F6284 /* PanelColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9753D90A1C243711008F6284 /* PanelColorsViewController.m */; };
 		9753D90F1C243770008F6284 /* PanelFiguresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9753D90E1C243770008F6284 /* PanelFiguresViewController.m */; };
+		976420BC1C2AE61E0064BF21 /* DataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 976420BB1C2AE61E0064BF21 /* DataSerializer.m */; };
+		976767F21C2C408C00C82AFD /* serializedData in Resources */ = {isa = PBXBuildFile; fileRef = 976767F11C2C408C00C82AFD /* serializedData */; };
 		9782DAA91C1ED44500F2FC46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DAA81C1ED44500F2FC46 /* main.m */; };
 		9782DAAC1C1ED44500F2FC46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DAAB1C1ED44500F2FC46 /* AppDelegate.m */; };
 		9782DAAF1C1ED44500F2FC46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782DAAE1C1ED44500F2FC46 /* ViewController.m */; };
@@ -40,6 +42,9 @@
 		9753D90C1C243716008F6284 /* PanelColorsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanelColorsViewController.h; sourceTree = "<group>"; };
 		9753D90D1C243770008F6284 /* PanelFiguresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelFiguresViewController.h; path = Base.lproj/PanelFiguresViewController.h; sourceTree = "<group>"; };
 		9753D90E1C243770008F6284 /* PanelFiguresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanelFiguresViewController.m; path = Base.lproj/PanelFiguresViewController.m; sourceTree = "<group>"; };
+		976420BA1C2AE5D20064BF21 /* DataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSerializer.h; path = ../DataSerializer.h; sourceTree = "<group>"; };
+		976420BB1C2AE61E0064BF21 /* DataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSerializer.m; sourceTree = "<group>"; };
+		976767F11C2C408C00C82AFD /* serializedData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = serializedData; path = mySadPaint.xcodeproj/serializedData; sourceTree = "<group>"; };
 		9782DAA31C1ED44500F2FC46 /* mySadPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySadPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9782DAA71C1ED44500F2FC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9782DAA81C1ED44500F2FC46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 		9782DA9A1C1ED44500F2FC46 = {
 			isa = PBXGroup;
 			children = (
+				976767F11C2C408C00C82AFD /* serializedData */,
 				9782DAA51C1ED44500F2FC46 /* mySadPaint */,
 				9782DABF1C1ED44500F2FC46 /* mySadPaintTests */,
 				9782DAA41C1ED44500F2FC46 /* Products */,
@@ -99,6 +105,8 @@
 			children = (
 				9782DACC1C1ED57200F2FC46 /* SimpleDrawer.h */,
 				9782DACD1C1ED57600F2FC46 /* SimpleDrawer.m */,
+				976420BA1C2AE5D20064BF21 /* DataSerializer.h */,
+				976420BB1C2AE61E0064BF21 /* DataSerializer.m */,
 				9782DAAA1C1ED44500F2FC46 /* AppDelegate.h */,
 				9782DAAB1C1ED44500F2FC46 /* AppDelegate.m */,
 				978BA6181C2824B900E1E37D /* PanelsProtocols.h */,
@@ -226,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976767F21C2C408C00C82AFD /* serializedData in Resources */,
 				9782DAB21C1ED44500F2FC46 /* Main.storyboard in Resources */,
 				9782DAB71C1ED44500F2FC46 /* LaunchScreen.xib in Resources */,
 				9782DAB41C1ED44500F2FC46 /* Images.xcassets in Resources */,
@@ -246,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976420BC1C2AE61E0064BF21 /* DataSerializer.m in Sources */,
 				9782DACE1C1ED57600F2FC46 /* SimpleDrawer.m in Sources */,
 				9753D9021C2429B5008F6284 /* BoardViewController.m in Sources */,
 				9753D9061C2433A5008F6284 /* CanvasViewController.m in Sources */,

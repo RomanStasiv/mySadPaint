@@ -9,18 +9,20 @@
 #import "PanelFiguresViewController.h"
 
 @interface PanelFiguresViewController ()
-@property (nonatomic,strong) NSString *selectedFigure;
+@property (nonatomic, strong) NSString *selectedFigure;
 @end
 
 @implementation PanelFiguresViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.selectedFigure = @"line";
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -51,8 +53,18 @@
 }
 - (IBAction)cancelPressed
 {
-    self.canvasDelegate.cancelLastFigure;
+    [self.canvasDelegate cancelLastFigure];
 }
+- (IBAction)savePressed
+{
+    [self.canvasDelegate saveToFile];
+}
+- (IBAction)loadPressed
+{
+    [self.canvasDelegate readFromFile];
+}
+
+
 
 /*
 #pragma mark - Navigation

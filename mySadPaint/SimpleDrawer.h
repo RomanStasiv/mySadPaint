@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataSerializer.h"
+
 
 @interface SimpleDrawer : UIView
 
@@ -16,7 +18,8 @@
          toEndPoint:(CGPoint) endPoint
           withColor:(UIColor*) color;
 -(void)addPointToPencilTray:(CGPoint)point;
--(void)cancelLastOperation;
-
+-(void)cancelLastOperationWithSaving: (BOOL) save;
+-(void)saveToFile: (NSString *) path;
+-(void)readFromFile:(NSString *) path;
 
 @end

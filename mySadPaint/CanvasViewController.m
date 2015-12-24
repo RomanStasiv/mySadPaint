@@ -18,14 +18,22 @@
 
 @implementation CanvasViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     self.selectedFigureType = @"line";
     self.selectedColor = [UIColor redColor];
+    
+    
+    
+
 }
 
-- (void)didReceiveMemoryWarning {
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -40,8 +48,20 @@
 }
 - (void)cancelLastFigure
 {
-    [self.drawer cancelLastOperation];
+    [self.drawer cancelLastOperationWithSaving: YES];
 }
+- (void)saveToFile
+{
+    //[self.drawer saveToFile:@"//Users//romanstasiv//Desktop//somejson.dat"];
+    [self.drawer saveToFile:[[NSBundle mainBundle] pathForResource:@"//serializedData//somejson" ofType:@"dat" ]];
+}
+- (void)readFromFile
+{
+    [self.drawer readFromFile:[[NSBundle mainBundle] pathForResource:@"//serializedData//somejson" ofType:@"dat" ]];
+    //[self.drawer readFromFile:@"//Users//romanstasiv//Desktop//somejson.dat"];
+    
+}
+
 
 
 #pragma mark - Touch Events
@@ -69,7 +89,7 @@
     }
     else
     {
-        [self.drawer cancelLastOperation];
+        [self.drawer cancelLastOperationWithSaving: NO];
         [(SimpleDrawer *)self.drawer addOperation:self.selectedFigureType
                                    fromStartPoint:self.startPoint
                                        toEndPoint:endPoint
@@ -89,7 +109,7 @@
     }
     else
     {
-        [self.drawer cancelLastOperation];
+        [self.drawer cancelLastOperationWithSaving: NO];
         [(SimpleDrawer *)self.drawer addOperation:self.selectedFigureType
                                    fromStartPoint:self.startPoint
                                        toEndPoint:endPoint

@@ -10,6 +10,7 @@
 
 @interface PanelColorsViewController ()
 @property (nonatomic,strong) UIColor *selectedColor;
+@property (weak, nonatomic) IBOutlet UILabel *curentColorLabel;
 @end
 
 @implementation PanelColorsViewController
@@ -25,24 +26,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (UIColor *)getSelectedColor
+- (IBAction)selectedColorChanged:(UIButton *)sender
 {
-    return _selectedColor;
+    self.curentColorLabel.backgroundColor = sender.backgroundColor;
+    self.selectedColor = sender.backgroundColor;
+    [self.canvasDelegate setColor:self.selectedColor ];
 }
 
-- (IBAction)selectedIndexChanged:(UISegmentedControl *)sender
-{
-    switch (sender.selectedSegmentIndex)
-    {
-        case 0: [self.canvasDelegate setColor:[UIColor redColor]];
-            break;
-        case 1: [self.canvasDelegate setColor:[UIColor greenColor]];
-            break;
-        case 2: [self.canvasDelegate setColor:[UIColor blueColor]];
-            break;
-    }
-}
 
 /*
 #pragma mark - Navigation

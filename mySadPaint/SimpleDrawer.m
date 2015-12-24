@@ -145,15 +145,29 @@
     [self setNeedsDisplay];
 }
 
--(void)cancelLastOperation
+-(void)cancelLastOperationWithSaving: (BOOL) save
 {
-    [self.canceleddrawings addObject:[self.drawingsToProcede lastObject]];
-    NSLog(@"canceled:%@", [[self.drawingsToProcede lastObject] valueForKey:@"operation"]);
+    if (save)
+    {
+        [self.canceleddrawings addObject:[self.drawingsToProcede lastObject]];
+        NSLog(@"canceled:%@", [[self.drawingsToProcede lastObject] valueForKey:@"operation"]);
+    }
     [self.drawingsToProcede removeLastObject];
-    
     [self setNeedsDisplay];
 }
 
+-(void) saveToFile:(NSString *) path
+{
+    [DataSerializer serializeArray:self.drawingsToProcede toFile:path];
+    NSLog(@"before: %@", self.drawingsToProcede);
+}
 
 
+-(void) readFromFile:(NSString *) path
+{
+    self.drawingsToProcede = [DataSerializer readArrayFromFile:path];
+    
+    NSLog(@"after: %@", self.drawingsToProcede);
+    [self setNeedsDisplay];
+}
 @end

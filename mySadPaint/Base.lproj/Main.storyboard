@@ -17,46 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cap-rg-tur">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="cfU-gD-DS5" kind="embed" identifier="embedCanvas" id="rQU-5a-mXX"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-PD-NMt">
-                                <rect key="frame" x="0.0" y="520" width="600" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9Ym-pi-zjI"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="GuS-ZR-v2e" kind="embed" identifier="embedFiguresPanel" id="m40-3K-yXz"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6AK-kA-eWp">
-                                <rect key="frame" x="0.0" y="550" width="600" height="30"/>
+                                <rect key="frame" x="0.0" y="510" width="600" height="70"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="29r-Lg-txu"/>
+                                    <constraint firstAttribute="height" constant="70" id="Hv3-r7-ZW0"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="Ya3-CE-ifg" kind="embed" identifier="embedColorsPanel" id="ncb-cZ-F9y"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-PD-NMt">
+                                <rect key="frame" x="0.0" y="480" width="600" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EVb-04-tB0"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="GuS-ZR-v2e" kind="embed" identifier="embedFiguresPanel" id="m40-3K-yXz"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6AK-kA-eWp" secondAttribute="bottom" id="6I2-GN-dec"/>
-                            <constraint firstAttribute="trailing" secondItem="FfX-PD-NMt" secondAttribute="trailing" id="7Jg-xT-u8D"/>
-                            <constraint firstAttribute="trailing" secondItem="cap-rg-tur" secondAttribute="trailing" id="COh-0P-EVY"/>
-                            <constraint firstItem="cap-rg-tur" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qcl-ih-lfe"/>
-                            <constraint firstAttribute="trailing" secondItem="6AK-kA-eWp" secondAttribute="trailing" id="XhM-AX-40j"/>
-                            <constraint firstItem="FfX-PD-NMt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b6B-vr-m4y"/>
-                            <constraint firstItem="6AK-kA-eWp" firstAttribute="top" secondItem="FfX-PD-NMt" secondAttribute="bottom" id="oXP-58-TB5"/>
-                            <constraint firstItem="6AK-kA-eWp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="omL-cK-1F3"/>
-                            <constraint firstItem="FfX-PD-NMt" firstAttribute="top" secondItem="cap-rg-tur" secondAttribute="bottom" id="pBU-IO-4dH"/>
-                            <constraint firstItem="cap-rg-tur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rjt-DZ-3DM"/>
+                            <constraint firstItem="6AK-kA-eWp" firstAttribute="top" secondItem="FfX-PD-NMt" secondAttribute="bottom" id="7bL-Cz-ukg"/>
+                            <constraint firstAttribute="trailing" secondItem="6AK-kA-eWp" secondAttribute="trailing" id="I4Q-nt-sfE"/>
+                            <constraint firstItem="FfX-PD-NMt" firstAttribute="top" secondItem="cap-rg-tur" secondAttribute="bottom" id="J6c-8Z-Afw"/>
+                            <constraint firstItem="FfX-PD-NMt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OC2-Sa-8yd"/>
+                            <constraint firstItem="6AK-kA-eWp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OR1-2x-7z2"/>
+                            <constraint firstItem="cap-rg-tur" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YKH-H3-YyT"/>
+                            <constraint firstAttribute="trailing" secondItem="cap-rg-tur" secondAttribute="trailing" id="g9i-Tp-wVC"/>
+                            <constraint firstItem="cap-rg-tur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pwN-Yl-q12"/>
+                            <constraint firstAttribute="trailing" secondItem="FfX-PD-NMt" secondAttribute="trailing" id="sKv-i5-T7Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6AK-kA-eWp" secondAttribute="bottom" id="xHb-hq-3ca"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -75,11 +75,11 @@
                         <viewControllerLayoutGuide type="bottom" id="obI-3d-cfC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yte-12-WGD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McB-E6-7oM" customClass="SimpleDrawer">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kc9-R5-6Cz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1660" y="-9"/>
+            <point key="canvasLocation" x="1660" y="-30"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="scV-vd-CEh">
@@ -147,57 +147,157 @@
                         <viewControllerLayoutGuide type="bottom" id="d9t-iI-ExH"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1R6-4Q-BzK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2bJ-bt-dB2">
-                                <rect key="frame" x="-262" y="40" width="600" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMi-A6-sW7">
+                                <rect key="frame" x="78" y="8" width="25" height="25"/>
                                 <animations/>
-                                <segments>
-                                    <segment title="red"/>
-                                    <segment title="green"/>
-                                    <segment title="blue"/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                </segments>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="colorChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="21H-GZ-2aQ"/>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="dyx-90-CIA"/>
                                 </connections>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v6g-SP-TzD">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="29"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exu-8W-Vyj">
+                                <rect key="frame" x="78" y="37" width="25" height="25"/>
                                 <animations/>
-                                <segments>
-                                    <segment title="red"/>
-                                    <segment title="green"/>
-                                    <segment title="blue"/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                </segments>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="colorChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Yph-is-MrK"/>
-                                    <action selector="selectedIndexChanged:" destination="Ya3-CE-ifg" eventType="valueChanged" id="Yio-02-2xc"/>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="nk0-ew-Q1t"/>
                                 </connections>
-                            </segmentedControl>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAe-6F-EYR">
+                                <rect key="frame" x="111" y="8" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.0" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="WKL-Rf-cHD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqY-lD-ZAZ">
+                                <rect key="frame" x="111" y="37" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.77834051719999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="44j-oS-P4Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye6-Qr-Ka9">
+                                <rect key="frame" x="144" y="8" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="PSC-Ga-X2s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXu-8f-Xac">
+                                <rect key="frame" x="144" y="37" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="fvS-kM-BVS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-d4-2bG">
+                                <rect key="frame" x="177" y="8" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="KBC-Se-0sW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODk-sU-e3L">
+                                <rect key="frame" x="177" y="37" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="pfF-EP-bcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2f-jM-fPN">
+                                <rect key="frame" x="210" y="8" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="Pyq-02-oay"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3c-Dt-kgl">
+                                <rect key="frame" x="210" y="37" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="R7c-jO-gI5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcT-0Q-hkm">
+                                <rect key="frame" x="243" y="8" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="8GX-6c-h2w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixt-0R-6rN">
+                                <rect key="frame" x="243" y="37" width="25" height="25"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedColorChanged:" destination="Ya3-CE-ifg" eventType="touchUpInside" id="PEG-6v-iTj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXT-bM-VGp">
+                                <rect key="frame" x="16" y="8" width="54" height="54"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.77834051719999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="d9t-iI-ExH" firstAttribute="top" secondItem="v6g-SP-TzD" secondAttribute="bottom" id="FDy-km-50x"/>
-                            <constraint firstItem="v6g-SP-TzD" firstAttribute="top" secondItem="rP6-N4-GGK" secondAttribute="bottom" id="HVu-fJ-yWP"/>
-                            <constraint firstItem="v6g-SP-TzD" firstAttribute="leading" secondItem="1R6-4Q-BzK" secondAttribute="leading" id="LNC-ca-0ya"/>
-                            <constraint firstAttribute="trailing" secondItem="v6g-SP-TzD" secondAttribute="trailing" id="qEE-Du-f64"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="curentColorLabel" destination="dXT-bM-VGp" id="E55-XG-95x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dp-BU-Rte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,8 +319,7 @@
                                 <rect key="frame" x="540" y="0.0" width="60" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="i7L-Ae-Yjp"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="nOc-bT-ND7"/>
+                                    <constraint firstAttribute="width" constant="60" id="irJ-Uz-sXO"/>
                                 </constraints>
                                 <state key="normal" title="cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -230,8 +329,22 @@
                                     <action selector="cancelPressed" destination="GuS-ZR-v2e" eventType="touchUpInside" id="VLD-hs-A8E"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3nO-wf-FrG">
-                                <rect key="frame" x="0.0" y="0.0" width="540" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g3-Bv-zA6">
+                                <rect key="frame" x="507" y="0.0" width="33" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="1ZA-iZ-AVq"/>
+                                </constraints>
+                                <state key="normal" title="load">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9e-2Z-aej"/>
+                                    <action selector="loadPressed" destination="GuS-ZR-v2e" eventType="touchUpInside" id="eJu-9G-j7X"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3nO-wf-FrG">
+                                <rect key="frame" x="0.0" y="0.0" width="462" height="31"/>
                                 <animations/>
                                 <segments>
                                     <segment title="line"/>
@@ -247,31 +360,44 @@
                                     <action selector="selectedIndexChanged:" destination="GuS-ZR-v2e" eventType="valueChanged" id="Ayo-Bb-4nW"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-SN-fgP">
+                                <rect key="frame" x="462" y="0.0" width="45" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="vSs-sQ-i81"/>
+                                </constraints>
+                                <state key="normal" title="save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel" destination="BYZ-38-t0r" eventType="touchUpInside" id="XTP-k3-NKK"/>
+                                    <action selector="savePressed" destination="GuS-ZR-v2e" eventType="touchUpInside" id="Zzo-RN-4aW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="wnk-uK-eUb" secondAttribute="trailing" id="98U-Tu-4Ah"/>
-                            <constraint firstItem="3nO-wf-FrG" firstAttribute="top" secondItem="8VT-UM-wn4" secondAttribute="bottom" id="ASF-g5-v8C"/>
-                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="3nO-wf-FrG" secondAttribute="bottom" id="Au8-Oo-iSP"/>
-                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="wnk-uK-eUb" secondAttribute="bottom" id="Ioe-P2-cqK"/>
-                            <constraint firstItem="3nO-wf-FrG" firstAttribute="leading" secondItem="hVp-vO-EiZ" secondAttribute="leading" id="OLC-aF-mVa"/>
-                            <constraint firstItem="wnk-uK-eUb" firstAttribute="leading" secondItem="3nO-wf-FrG" secondAttribute="trailing" id="WLf-Pb-nEz"/>
-                            <constraint firstItem="wnk-uK-eUb" firstAttribute="leading" secondItem="3nO-wf-FrG" secondAttribute="trailing" id="WnR-ci-rr8"/>
-                            <constraint firstItem="3nO-wf-FrG" firstAttribute="top" secondItem="8VT-UM-wn4" secondAttribute="bottom" id="Yc2-56-5eV"/>
-                            <constraint firstAttribute="trailing" secondItem="wnk-uK-eUb" secondAttribute="trailing" id="ZOq-Bb-vxO"/>
-                            <constraint firstItem="3nO-wf-FrG" firstAttribute="leading" secondItem="hVp-vO-EiZ" secondAttribute="leading" id="ZTH-9p-AMO"/>
-                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="wnk-uK-eUb" secondAttribute="bottom" id="gP0-VH-aK0"/>
-                            <constraint firstItem="wnk-uK-eUb" firstAttribute="top" secondItem="hVp-vO-EiZ" secondAttribute="top" id="sbA-it-FYG"/>
-                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="3nO-wf-FrG" secondAttribute="bottom" id="uES-JJ-MgG"/>
-                            <constraint firstItem="wnk-uK-eUb" firstAttribute="top" secondItem="8VT-UM-wn4" secondAttribute="bottom" id="vje-Di-UqE"/>
+                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="wnk-uK-eUb" secondAttribute="bottom" id="48I-xZ-foB"/>
+                            <constraint firstItem="nQv-SN-fgP" firstAttribute="top" secondItem="hVp-vO-EiZ" secondAttribute="top" id="7c8-DG-vcT"/>
+                            <constraint firstAttribute="trailing" secondItem="wnk-uK-eUb" secondAttribute="trailing" id="FlC-fs-Chc"/>
+                            <constraint firstItem="3nO-wf-FrG" firstAttribute="leading" secondItem="hVp-vO-EiZ" secondAttribute="leading" id="Le7-xC-ubA"/>
+                            <constraint firstItem="wnk-uK-eUb" firstAttribute="top" secondItem="8VT-UM-wn4" secondAttribute="bottom" id="Pfp-1Q-ATZ"/>
+                            <constraint firstItem="nQv-SN-fgP" firstAttribute="leading" secondItem="3nO-wf-FrG" secondAttribute="trailing" id="SJp-f8-q2E"/>
+                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="nQv-SN-fgP" secondAttribute="bottom" id="SrT-vL-Rrp"/>
+                            <constraint firstItem="3g3-Bv-zA6" firstAttribute="leading" secondItem="nQv-SN-fgP" secondAttribute="trailing" id="WXl-Qh-iMY"/>
+                            <constraint firstItem="3g3-Bv-zA6" firstAttribute="top" secondItem="8VT-UM-wn4" secondAttribute="bottom" id="avJ-qN-gVW"/>
+                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="3nO-wf-FrG" secondAttribute="bottom" id="bi0-xN-eEr"/>
+                            <constraint firstItem="wnk-uK-eUb" firstAttribute="leading" secondItem="3g3-Bv-zA6" secondAttribute="trailing" id="jgc-Eh-g71"/>
+                            <constraint firstItem="0IS-va-uis" firstAttribute="top" secondItem="3g3-Bv-zA6" secondAttribute="bottom" id="pNw-ad-y1y"/>
+                            <constraint firstItem="3nO-wf-FrG" firstAttribute="top" secondItem="8VT-UM-wn4" secondAttribute="bottom" id="tqq-u7-mIo"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sin-Rt-voL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1660" y="403"/>
+            <point key="canvasLocation" x="1660" y="395"/>
         </scene>
     </scenes>
 </document>

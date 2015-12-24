@@ -20,6 +20,9 @@
 - (void)setFigureType: (NSString*) figure;
 - (void)setColor: (UIColor*) color;
 - (void)cancelLastFigure;
+- (void)saveToFile;
+- (void)readFromFile;
+
 @end
 
 
