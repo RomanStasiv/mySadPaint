@@ -9,7 +9,6 @@
 #import "PanelColorsViewController.h"
 
 @interface PanelColorsViewController ()
-@property (nonatomic,strong) UIColor *selectedColor;
 @property (weak, nonatomic) IBOutlet UILabel *curentColorLabel;
 @end
 
@@ -18,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.selectedColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,8 +27,7 @@
 - (IBAction)selectedColorChanged:(UIButton *)sender
 {
     self.curentColorLabel.backgroundColor = sender.backgroundColor;
-    self.selectedColor = sender.backgroundColor;
-    [self.canvasDelegate setColor:self.selectedColor ];
+    [self.canvasDelegate setColor:sender.backgroundColor ];
 }
 
 

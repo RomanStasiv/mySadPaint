@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "PanelsProtocols.h"
 
-@interface PanelFiguresViewController : UIViewController <FigurePanelProtocol> 
-- (NSString *)getSelectedFigureName;
+@interface PanelFiguresViewController : UIViewController
 @property (nonatomic, weak) id<CanvasPropertiesSeting> canvasDelegate;
 @end

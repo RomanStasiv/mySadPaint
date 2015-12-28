@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "PanelsProtocols.h"
 
-@interface PanelColorsViewController : UIViewController <ColorPanelProtocol>
-- (UIColor *)getSelectedColor;
+@interface PanelColorsViewController : UIViewController 
 @property (nonatomic, weak) id<CanvasPropertiesSeting> canvasDelegate;
 @end

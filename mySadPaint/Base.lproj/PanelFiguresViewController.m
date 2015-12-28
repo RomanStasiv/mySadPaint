@@ -9,7 +9,7 @@
 #import "PanelFiguresViewController.h"
 
 @interface PanelFiguresViewController ()
-@property (nonatomic, strong) NSString *selectedFigure;
+@property (nonatomic, weak) UIButton *selectedFigureButton;
 @end
 
 @implementation PanelFiguresViewController
@@ -18,7 +18,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.selectedFigure = @"line";
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,30 +26,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSString *)getSelectedFigureName
+- (IBAction)SelectedFigureChanged:(UIButton *)sender
 {
-    return self.selectedFigure;
-}
-- (IBAction)selectedIndexChanged:(UISegmentedControl *)sender
-{
-    switch (sender.selectedSegmentIndex)
+    switch (sender.tag)
     {
-        case 0: [self.canvasDelegate setFigureType:@"line"];
+        case 100: [self.canvasDelegate setFigureType:@"line"];
             break;
-        case 1: [self.canvasDelegate setFigureType:@"rect"];
+        case 101: [self.canvasDelegate setFigureType:@"rect"];
             break;
-        case 2: [self.canvasDelegate setFigureType:@"triangle"];
+        case 102: [self.canvasDelegate setFigureType:@"triangle"];
             break;
-        case 3: [self.canvasDelegate setFigureType:@"ellipse"];
+        case 103: [self.canvasDelegate setFigureType:@"ellipse"];
             break;
-        case 4: [self.canvasDelegate setFigureType:@"sadness"];
+        case 104: [self.canvasDelegate setFigureType:@"sadness"];
             break;
-        case 5: [self.canvasDelegate setFigureType:@"image"];
+        case 105: [self.canvasDelegate setFigureType:@"image"];
             break;
-        case 6: [self.canvasDelegate setFigureType:@"pencil"];
+        case 106: [self.canvasDelegate setFigureType:@"pencil"];
             break;
     }
+    sender.backgroundColor = [UIColor grayColor];
+    self.selectedFigureButton.backgroundColor = [UIColor clearColor];
+    self.selectedFigureButton = sender;
 }
+
 - (IBAction)cancelPressed
 {
     [self.canvasDelegate cancelLastFigure];
